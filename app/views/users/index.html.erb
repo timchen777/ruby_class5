@@ -1,0 +1,21 @@
+<h1>Hello World!</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>eMail</th>
+      <th>Age</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.name %></td>
+        <td><%= user.email %></td>
+        <td><%= user.age %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
